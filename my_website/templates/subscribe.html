@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/subscribe_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.php");
+            $("#footer").load("footer.html");
+            $("#ads").load("sidebarads.html");
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <container>
+        <div class="grid">
+            <div id="header" class="header">
+                <!-- <?php include('header.php'); ?> -->
+            </div>
+            <div class="subscribe_box">
+                <h3>Subscribe</h3>
+                <h5>For Email Notification</h5>
+                <form class="subscribe_form" action="..\includes\add_mail_subscriber.php" method="post" enctype="multipart/form-data">
+                    <span>First Name</span>
+                    <input type="text" class="firstname" placeholder=" First Name..." name="firstname" required>
+                    <span>Last Name</span>
+                    <input type="text" class="lastname" placeholder=" Last Name..." name="lastname">
+                    <span>Email</span>
+                    <input type="email" class="email" placeholder="Email..." name="email" required>
+                    <span>Date of Birth</span>
+                    <input type="date" class="dob" name="birth_date" required>
+                    <span>Gender</span>
+                    <div class="gender_select">
+                        <input type="radio" id="male" value="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" value="female" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" value="other" name="gender">
+                        <label for="other">Other</label>
+                    </div>
+                    <button type="submit" class="subscribe_btn" name="submit_subscriber">Subscribe</button>
+                </form>
+            </div>
+            <div id="footer" class="footer">
+                <!-- <?php include('footer.php'); ?> -->
+            </div>
+        </div>
+    </container>
+</body>

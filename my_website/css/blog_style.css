@@ -1,0 +1,21 @@
+container .grid .content{
+    grid-area: content;
+    height: 100vmax;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-areas:
+    "option_sidebar blog_area";
+} 
+
+.option_sidebar{
+    grid-area: option_sidebar;
+    display: flex;
+    background-color: white;
+}
+
+.blog_area{
+    grid-area: blog_area;
+    display: flex;
+    background-color: rgb(180, 143, 143);
+}

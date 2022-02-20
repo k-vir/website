@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/jpgtopng_style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("../templates/header.php");
+            $("#footer").load("../templates/footer.html");
+            $("#ads").load("../templates/sidebarads.html");
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.browse_btn').click(function () {
+                $('.browse_btn').toggleClass('active')
+                $('.').toggleClass('active')
+            })
+        })
+    </script>
+    <title>Convert JPG to PNG, online</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('.browse').click(function () {
+                $('.select_files').toggleClass('active')
+                $('.add_more_files').toggleClass('active')
+            })
+        })
+    </script> -->
+    <script>
+        updateList = function () {
+            var input = document.getElementById('browse');
+            var output = document.getElementById('file_list');
+
+            output.innerHTML = '<ul>';
+            for (var i = 0; i < input.files.length; ++i) {
+                output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+            }
+            output.innerHTML += '</ul>';
+        }
+    </script>
+    <container>
+        <div class="grid">
+            <div id="header" class="header">
+                <!-- <?php include('header.php'); ?> -->
+            </div>
+            <div class="content">
+                <div class="tool_option_sidebar">
+                    <div class="options">
+                        <button class="convert_btn" type="submit" name="submit">Convert</button>
+                        <h2>Tool Settings</h2>
+                        <p>Uploaded JPG file will be converted to PNG.</p>
+
+                    </div>
+                </div>
+                <div class="tool_drag_area">
+                    <div class="tool_head">
+                        <h1 class="tool_name">JPG to PNG</h1>
+                        <h2 class="naration"> Please select JPEG/JPG file to convert.</h2>
+                        <p></p>
+                    </div>
+                    <div class="choose_files_area">
+                        <div id="file_list">
+                            <?php
+                                if (isset($_SESSION["user"])) {
+                                    echo'<p>. ($_SESSION["user"]).</p>';
+                                }  
+                            ?>
+                             <!-- uploaded file will get listed here. -->
+                        </div>
+                        <div class="select_files">
+                            <form class="form" action="../includes/upload.php" method="post" enctype="multipart/form-data">
+                                <input id="browse" class="browse" type="file" name="file[]" multiple hidden onchange="updateList()">
+                                <label class="browse_btn" for="browse">Select JPG file</label>
+                                <button class="upload_btn" type="submit" name="submit">UPLOAD</button>
+                            </form>
+                        </div>
+                        <div class="add_more_files">
+                            <form class="form" action="../includes/upload.php" method="post" enctype="multipart/form-data">
+                                <input id="browse" class="browse" type="file" name="file[]" multiple hidden>
+                                <label class="browse_btn" for="browse">Add More</label>
+                                <button class="upload_btn" type="submit" name="submit">UPLOAD</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="browsed_files_area">
+                        <div class="drag_area">
+                            <div id="file_list">
+                                <li>abc aba abc ababa ababab ababab</li>
+                                <li>abc</li>
+                                <li>abc</li>
+                                <li>abc</li>
+                                <li>abc</li>
+                            </div>
+                            <form class="form" action="includes/upload.php" method="post" enctype="multipart/form-data">
+                                <input id="browse" class="browse" type="file" name="files[]" multiple hidden>
+                                <label class="browse_btn" for="browse">Add More</label>
+                            </form>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="output_files_area">
+                        <div class="output_area">
+                            <div class="output_files">output files</div>
+                            <form class="form" action="../my_website/includes/download.php" method="get">
+                            <input id="download" class="download" type="submit" name="link" multiple hidden>
+                            <label for="download" class="download_btn">Download</label>
+                            </form>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="ads" class="ads">
+                <!-- <?php include('sidebarads.php'); ?> -->
+            </div>
+            <div id="footer" class="footer">
+                <!-- <?php include('footer.php'); ?> -->
+            </div>
+        </div>
+    </container>
+</body>
+
+</html>

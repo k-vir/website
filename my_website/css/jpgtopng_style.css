@@ -1,0 +1,170 @@
+.content {
+    grid-area: content;
+    height: 150%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas:
+        "tool_option_sidebar tool_drag_area";
+}
+
+.tool_option_sidebar {
+    grid-area: tool_option_sidebar;
+    display: flex;
+    background-color: white;
+
+}
+
+.convert_btn {
+    width: 90%;
+    height: 12%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(38, 138, 38, 0.637);
+    color: white;
+    font-size: 200%;
+    margin: 1% 5% 1% 5%;
+    box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tool_option_sidebar h2 {
+    text-align: center;
+    border-bottom: 2px dashed forestgreen;
+    margin: 1% 5% 1% 5%;
+    padding: 5%;
+}
+
+
+.tool_option_sidebar p {
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(34, 139, 34, 0.288);
+    border: none;
+    border-radius: 1em;
+    margin: 5%;
+}
+
+.tool_drag_area {
+    grid-area: tool_drag_area;
+    height: 70vh;
+}
+
+.tool_head {
+    border-bottom: 2px dotted forestgreen;
+}
+
+.tool_drag_area h1,
+h2 {
+    color: rgba(52, 51, 100, 0.37);
+    text-align: center;
+}
+
+#file_list {
+    height: 150px;
+    /* border-bottom: 1px dashed forestgreen; */
+    width: 97.5%;
+    margin: 10px 10px 10px 10px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#file_list li {
+    margin: 3px 3px 3px 3px;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    height: 86%;
+    width: 12%;
+    text-align: center;
+    text-justify: center;
+    list-style: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.tool_drag_area form {
+    text-align: center;
+    margin: 9% 0 0 40%;
+    transform: translateX(-40%) translateY(-40%);
+}
+
+.browse {
+    font-size: 15px;
+    padding: 15px 10px 15px 10px;
+    color: rgba(52, 51, 100, 0.37);
+    text-align: center;
+}
+
+.form label {
+    background-color: rgba(34, 139, 34, 0.637);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 200%;
+    margin: 10% 0 0% 15%;
+    padding: 2% 10% 2% 10%;
+    box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.3);
+}
+
+.browse_btn:hover,
+.convert_btn:hover,
+.download_btn:hover {
+    background: forestgreen;
+    color: white;
+}
+
+.add_more_files,
+.output_files_area {
+    display: none;
+
+}
+
+.choose_files_area {
+    /* background-color: blue; */
+    display: block;
+    height: 55vh;
+}
+
+.select_files.active {
+    display: none;
+}
+
+.add_more_files.active {
+    display: block;
+    /* background-color: rgb(236, 11, 11); */
+}
+
+.drag_area,
+.output_area {
+    border: 2px dashed forestgreen;
+    height: 50%;
+    width: 90%;
+    margin: 0 0 0 5%;
+
+}
+
+.drag_area:hover,
+.output_area:hover {
+    background-color: rgba(34, 139, 34, 0.068);
+
+}
+
+.browsed_files,
+.output_files {
+    text-align: center;
+    display: list-item;
+    list-style: none;
+    font-size: xx-large;
+    z-index: 1;
+
+}
+
+.grid .ads {
+    grid-area: ads;
+    height: 100%;
+    background-color: white;
+}

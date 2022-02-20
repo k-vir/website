@@ -1,0 +1,136 @@
+.grid{
+    background-image: url("../resources/bkgrnd.jpg");
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: raleway;
+}
+
+.container{
+    height: 80%;
+    width: 100%;
+}
+
+.errors_box {
+    margin-top: 120px;
+    z-index: 999;
+    font-size: 25px;
+}
+
+#message {
+    height: 30px;
+    width: 250px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.555);
+}
+
+.signup_box {
+    background-color: rgba(0, 0, 0, 0.075);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 63%;
+    width: 25%;
+    display: block;
+    border-radius: 1.5em;
+    box-shadow: 5px 8px 26px 0px rgba(0,0,0,0.8);
+}
+
+.signup_form {
+    margin: 0 5% 0 5%;
+    padding: 25px 0;
+}
+
+.signup_box h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
+
+.signup_box form input {
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+    margin: 7px 0 0 0;
+    border-radius: 2em;
+    padding: 0 5%;
+    color: forestgreen;
+    border: none;
+    outline: none;
+}
+
+.signup_form ul {
+    display: flex;
+    margin: 0 0 0 -40px;
+}
+
+.signup_form .firstname,
+.signup_form .lastname {
+    width: 45%;
+    margin: 0 5px;
+    display: flexbox;
+}
+
+.signup_form span a,
+.signup_form span {
+    color: rgb(0, 0, 0);
+    margin: -5px 10px ;
+    font-size: 15px;
+    float: right;
+}
+
+.signup_box button {
+    width: 80%;
+    height: 48px;
+    padding: 7px 0;
+    margin: 20px 20px;
+    text-align: center;
+    border-radius: 2em;
+    border: none;
+}
+
+.signup_btn{
+    background-color: honeydew;
+    color: forestgreen;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.signup_box ul {
+    display: flex;
+}
+
+.signup_box .fb_signup_btn{
+    background-color: rgb(31, 57, 173);
+    color: white;
+    width: 45%;
+    margin: -20px 5px;
+    display: flexbox;
+    font-size: 15px;
+}
+
+.buttons {
+    margin-left: -18px;
+}
+
+.signup_box .google_signup_btn {
+    background-color: rgb(194, 33, 21);
+    color: white;
+    width: 48%;
+    margin: -20px 0px;
+    display: flexbox;
+    font-size: 15px;
+}
+
+.signup_btn:hover,
+.fb_signup_btn:hover,
+.google_signup_btn:hover {
+    background-color: forestgreen;
+    color: honeydew;
+}

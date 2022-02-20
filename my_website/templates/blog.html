@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\blog_style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.php");
+            $("#footer").load("footer.html");
+            $("#ads").load("sidebarads.html");
+        });
+    </script>
+    <title>Blog Creative Solutions</title>
+</head>
+
+<body>
+    <container>
+        <div class="grid">
+            <div id="header" class="header">
+                <!-- <?php include('header.php'); ?> -->
+            </div>
+            <div class="content">
+                <div class="option_sidebar">
+                    <div class="options">
+                        <h2>Tool Settings</h2>
+                        <p>Uploaded JPG file will be converted to PNG.</p>
+                    </div>
+                </div>
+                <div class="blog_area">
+
+                    
+                </div>
+
+                
+            </div>
+            <div id="ads" class="ads">
+                <!-- <?php include('sidebarads.php'); ?> -->
+            </div>
+            <div id="footer" class="footer">
+                <!-- <?php include('footer.php'); ?> -->
+            </div>
+        </div>
+    </container>
+</body>
+
+</html>
