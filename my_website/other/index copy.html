@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <container>
+        <div class="grid">
+            <!-- logo for desktop pc -->
+            <div class="logo_desktop">
+                <img class="logo_img" src="My Logo Small.png" alt="logo" />
+            </div>
+            <!-- logo for mobile phone -->
+            <div class="logo_mobile">
+                <img class="img" src="logo.png" alt="logo" />
+            </div>
+            <div class="header">Header</div>
+            <div class="sidebar">
+                <ul class="nav">
+                    <div class="dropdown">
+                        <span>Pdf Tools</span>
+                        <div class="dropdown_content">
+                            <ul>
+                                <div class="row">
+                                    <ul class="tool_links">
+                                        <header>Convert form PDF</header>
+                                        <li><a href="#">PDF to JPEG</a></li>
+                                        <li><a href="#">PDF to PNG</a></li>
+                                        <li><a href="#">PDF to EXCEL</a></li>
+                                        <li><a href="#">PDF to WORD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <ul class="tool_links">
+                                        <header>Convert to PDF</header>
+                                        <li><a href="#">JPEG to PDF</a></li>
+                                        <li><a href="#">PNG to PDF</a></li>
+                                        <li><a href="#">EXCEL to PDF</a></li>
+                                        <li><a href="#">WORD to PDF</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="row">
+                                    <ul class="tool_links">
+                                        <span>Other PDF Tools</span>
+                                        <li><a href="#">Compress PDF</a></li>
+                                        <li><a href="#">Merge PDF</a></li>
+                                        <li><a href="#">Split PDF</a></li>
+                                        <li><a href="#">Organize PDF</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span>Png Tools</span>
+                        <div class="dropdown_content">
+                            <ul>
+                                <div class="row">
+                                    <ul class="tool_links">
+                                        <li><a href="#">PNG to JPEG</a></li>
+                                        <li><a href="#">PNG to PDF</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span>Jpg Tools</span>
+                        <div class="dropdown_content">
+                            <ul>
+                                <div class="row">
+                                    <ul class="tool_links">
+                                        <li><a href="#">JPEG to PNG</a></li>
+                                        <li><a href="#">JPEG to PDF</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+                <!-- <button class="menu_btn">PDF to JPEG</button>
+                <li><a href="/merge_pdf">Merge PDF</a></li>
+                <button class="menu_btn">PDF to PNG</button>
+                <button class="menu_btn">PNG to JPEG</button>
+                <button class="menu_btn">JPEG to PNG</button>
+                <button class="menu_btn">Compress PDF</button>
+                <button class="menu_btn">Compress JPEG</button>
+                <button class="menu_btn">JPEG to PDF</button>
+                <button class="menu_btn">PNG to PDF</button> -->
+
+            </div>
+            <div class="content">
+                <h2 class="naration"> Please select JPEG/JPG file to convert.</h2>
+                <form class="form" action="upload.php" method="POST" enctype="multipart/form-data">
+                    <input class="browse" type="file" name="file">
+                    <button class="btn" type="submit" name="submit">UPLOAD</button>
+                </form>
+            </div>
+            <div class="footer">Footer</div>
+
+
+
+        </div>
+    </container>
+</body>
+
+</html>
