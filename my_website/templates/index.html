@@ -17,7 +17,8 @@
     </script>
     <title>Creative Solutionz</title>
 </head>
-<body>
+<body onload="loading()">
+    <div id="loading"></div>
     <container>
         <div class="grid">
             <div id="header" class="header">
@@ -367,6 +368,12 @@
             <div id="footer" class="footer">
                 <?php include('footer.php'); ?>
             </div>
+            <script>
+             var preloader = document.getElementById('loading');
+                function loading() {
+                    preloader.style.display= "none";
+                 }
+            </script> 
         </div>
     </container>
 </body>
