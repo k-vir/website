@@ -7,6 +7,15 @@ body {
     color: forestgreen;
 }
 
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url(https://tenor.com/view/mr-bean-waiting-still-waiting-gif-13052487)
+    no-repeat center;
+    z-index: 99999;
+}
+
 .grid {
     display: grid;
     width: 100vw;
