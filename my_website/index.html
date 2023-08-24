@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online simple and free tools for PDF and JPG documents. Including JPG to PNG, JPG to PDF, Compress PDF, Resize PDF, Rotate PDF, PNG to JPG and many more!!">
+    <meta name="keywords" content="JPG to PNG, JPG to PDF, Compress PDF, Resize PDF, Rotate PDF, PNG to JPG">
+    <meta name="author" content="PDFtools.com">
+    <link rel="preload" href="header.php">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/min.js"></script>
+    <script src="js/my_custom.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.php");
+            $("#footer").load("footer.php");
+        });
+    </script>
+    <title>Creative Solutionz</title>
+</head>
+
+<body>
+    <div id="loading">
+        <img id="loading_image" src="resources/Circles-menu-3.gif" alt="Loading..." />
+    </div>
+    <container>
+        <div class="grid">
+            <div id="header" class="header">
+            </div>
+            <div class="content">
+                <div id="content_homepage" class="content_homepage">
+                    <div id="menu_box" class="menu_box">
+                        <h1>Our Tools</h1>
+                        <div id="tools_menu" class="tools_menu">
+                            <!-- <a class="tools_item" href="" title="PDF to JPEG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="jpg"></img>
+                                </div>
+                                <h4>PDF to JPEG</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to JPEG instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="PDF to PNG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PNG.svg" alt="png"></img>
+                                </div>
+                                <h4>PDF to PNG</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to PNG instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="PDF to Excel">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-excel.png"
+                                        alt="excel"></img>
+                                </div>
+                                <h4>PDF to Excel</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Excel Spreadsheet instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="PDF to Word">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-word.png" alt="word"></img>
+                                </div>
+                                <h4>PDF to Word</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Word Document instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Excel to PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-excel.png"
+                                        alt="excel"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                </div>
+                                <h4>Excel to PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Excel Spreadsheet instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Word to PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-word.png" alt="word"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                </div>
+                                <h4>Word to PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Word Document instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="#" title="Compress PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="word"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div>
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                </div>
+                                <h4>Compress PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert JPG files to PNG instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Merge PDF">
+                                <div class="tools_item_icon">
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                </div>
+                                <h4>Merge PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to PNG instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Split PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="word"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-PDF.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                </div>
+                                <h4>Split PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Excel Spreadsheet instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Organize PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            style="margin-bottom: -8px; height: 130%;" alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-a-z.svg"
+                                            style="margin:-13px 0 0 12px; height: 40px;" alt="scissors"></img>
+                                    </div>
+                                </div>
+                                <h4>Organize PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Word Document instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Edit JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            style="margin-bottom: -8px; height: 130%;" alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-pencil.svg"
+                                            style="margin:-13px 0 0 12px; height: 40px;" alt="scissors"></img>
+                                    </div>
+                                </div>
+                                <h4>Edit JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Excel Spreadsheet instantly.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="" title="Crop JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            style="margin-bottom: -8px; height: 130%;" alt="pdf"></img>
+                                        <img class="tools_item_icon_img" src="resources\icon-Scissors.svg"
+                                            style="margin:-13px 0 0 12px; height: 40px;" alt="scissors"></img>
+                                    </div>
+                                </div>
+                                <h4>Crop JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>Convert PDF files to Word Document instantly.</p>
+                                </div>
+                            </a>
+                            <a id="tools_item_rotate" class="tools_item" href="rotatejpg.php" title="Rotate JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG" style="transform:rotate(90deg);"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img id="rotate_it" class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="pdf"></img>
+
+                                </div>
+                                <h4>Rotate JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>Rotate jpg files from portrait to landscape or vice versa.</p>
+                                </div>
+                            </a> -->
+                            <a class="tools_item" href="jpgtopng" title="JPG to PNG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PNG.svg" alt="PNG"></img>
+                                </div>
+                                <h4>JPG to PNG</h4>
+                                <div class="tools_item_content">
+                                    <p>A simple tool to convert JPG files to PNG instantly and for free.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="jpgtopdf" title="JPG TO PDF">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-PDF.svg" alt="pdf"></img>
+                                </div>
+                                <h4>JPG TO PDF</h4>
+                                <div class="tools_item_content">
+                                    <p>A simple tool to convert JPG files to PDF instantly and for free.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="compressjpg" title="Compress JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div>
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            alt="jpg"></img>
+                                    </div>
+                                </div>
+                                <h4>Compress JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>A simple tool to compress JPG files without quality loss for free.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="resizejpg" title="Resize JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <div class="icon_double_img">
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            alt="pdf"></img>
+                                    </div>
+                                    <div>
+                                        <img class="tools_item_icon_img" src="resources\icon-JPG.svg"
+                                            alt="jpg"></img>
+                                    </div>
+                                </div>
+                                <h4>Resize JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>A simple tool to Resize JPG file dimensions to reduse file size instently.</p>
+                                </div>
+                            </a>
+                            <a class="tools_item" href="pngtojpg" title="PNG to JPG">
+                                <div class="tools_item_icon">
+                                    <img class="tools_item_icon_img" src="resources\icon-PNG.svg" alt="PNG"></img>
+                                    <img class="tools_item_icon_img" src="resources\next-ARROW.svg"
+                                        alt="arrow"></img>
+                                    <img class="tools_item_icon_img" src="resources\icon-JPG.svg" alt="JPG"></img>
+                                </div>
+                                <h4>PNG to JPG</h4>
+                                <div class="tools_item_content">
+                                    <p>A simple tool to convert PNG files to JPG instantly and for free.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="content_blank">
+                <p>Supernatural horror became prevalent in the 1920s and the early 1930s with German expressionist
+                    films; Paul Meehan said the style created "a nightmarish netherworld of supernatural fear". The
+                    genre became more commercially popular in the 1930s with Universal Studios producing Universal
+                    Monsters films, and the films "were set in a mythical Transylvania or other Eastern European locale,
+                    in an unreal fantasy world far divorced from everyday". Meehan said, "This served to make the
+                    creatures of the night that populated these films into harmless chimeras comfortably ensconced in
+                    the faraway past." In the early 1940s, supernatural horror films had more contemporary settings, but
+                    the genre was ultimately superseded by psychological horror films. By the end of World War II, the
+                    supernatural horror genre "met its demise", being overshadowed by the atrocities of the war. By the
+                    1950s, science fiction horror films had replaced supernatural horror films, and psychological horror
+                    films also became more popular in the same decade, ultimately eclipsing supernatural horror.[3] The
+                    few supernatural horror films that were produced in the 1950s were often set in haunted houses, a
+                    continuation of haunted-house films prevalent in the 1940s.[4]
+
+                    In the 1960s, horror films like The Innocents (1961), The Haunting (1963), and Rosemary's Baby
+                    (1968) used supernatural elements but were not directly about the paranormal. Other horror films
+                    used supernatural themes to code elements being censored by the Motion Picture Production Code (or
+                    the Hays Code). The Haunting featured a female protagonist interested in another woman, and she was
+                    a queer coded character. Such characters were commonplace in the history of supernatural horror
+                    films.[6] Sue Matheson wrote of Rosemary's Baby, "[It] popularized depictions of witchcraft, demonic
+                    activity, and the Devil on screen and generated a wave of supernatural horror movies."[7] By the
+                    1970s, the films The Exorcist (1973) and The Omen (1976) revived the supernatural horror genre.
+                    Literature was used as source material like with the earliest films, with the written works of
+                    Stephen King being adapted into Carrie (1976) and The Shining (1980). The film Poltergeist (1982)
+                    was also a genre highlight in the 1980s.[8]
+
+                    In the 2000s, violent horror films called "torture porn" were popular. By the end of the decade,
+                    supernatural horror reclaimed their popularity. The found footage film The Blair Witch Project had
+                    achieved fame in 1999, and in the late 2000s, Paranormal Activity succeeded with the same film
+                    technique, which led to a film series that lasted until the mid-2010s.[
+                </p>
+            </div> -->
+
+
+            <div id="footer" class="footer">
+            </div>
+
+        </div>
+    </container>
+    <script src="js/my_custom.js"></script>
+</body>
+<a href="javascript:void(0)" class="go_top_btn">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+</html>
